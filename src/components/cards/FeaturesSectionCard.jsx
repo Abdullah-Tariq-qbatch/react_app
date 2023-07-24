@@ -19,14 +19,28 @@ const FeaturesSectionCard = ({ image, text, title, icon }) => {
       <Box sx={FeaturesCardNumber}>{icon}</Box>
       <Box
         sx={{
-          height: "25vh",
-          width: "55%",
-          border: "2px solid #324355",
+          height: "220px",
+          width: "70%",
+          position: "relative",
+          display: "flex",
+          justifyContent: "center",
         }}
       >
-        {" "}
+        <img src={image} style={FeaturesCardImage} alt="features" />
+        <Box
+          sx={{
+            position: "absolute",
+            height: "100%",
+            width: "220px",
+            top: "-5%",
+            left: "5%",
+            border: "2px solid #304350",
+            zIndex: "0",
+          }}
+        >
+          {" "}
+        </Box>
       </Box>
-      <img src={image} style={FeaturesCardImage} alt="features" />
       <Box sx={FeaturesCardTextContainer}>
         <Typography sx={FeaturesCardTitle}>{title}</Typography>
         <Typography sx={FeaturesCardText}>{text}</Typography>

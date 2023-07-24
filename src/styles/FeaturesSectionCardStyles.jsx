@@ -18,9 +18,10 @@ const FeaturesCardNumber = {
 };
 
 const FeaturesCardImage = {
-  width: "60%",
-  marginTop: "-200px",
-  marginLeft: "-30px",
+  width: "220px",
+  height: "220px",
+  position: "relative",
+  zIndex: "1",
 };
 
 const FeaturesCardTextContainer = { width: "60%" };

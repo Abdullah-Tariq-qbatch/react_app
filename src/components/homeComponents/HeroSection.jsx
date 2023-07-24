@@ -15,7 +15,6 @@ import {
   Icon,
   Button2,
   RightContainer,
-  RightImage,
   BottomContainer,
 } from "../../styles/HeroSectionStyles";
 
@@ -47,27 +46,30 @@ const HeroSection = () => {
               </Box>
             </Box>
             <Box sx={RightContainer}>
-              <Box sx={RightImage}>
-                <Box
-                  sx={{
-                    height: "38%",
-                    width: "28%",
-                    position: "absolute",
-                    top: "30%",
-                    right: "20%",
-                    border: "2px solid #324355",
-                    zIndex: "0",
-                  }}
-                ></Box>
-                <img
-                  src={image}
-                  style={{
-                    height: "auto",
-                    width: "100%",
-                    zIndex: "99",
-                  }}
-                  alt="Hero"
-                />
+              <img
+                src={image}
+                style={{
+                  position: "relative",
+                  zIndex: "1",
+                  height: "auto",
+                  width: "100%",
+                }}
+                alt="Hero"
+              />
+              <Box
+                sx={{
+                  position: "absolute",
+                  top: "5%",
+                  left: "5%",
+                  width: "98%",
+                  height: "98%",
+                  textAlign: "center",
+                  fontSize: "18px",
+                  border: "2px solid #304350",
+                  zIndex: "0",
+                }}
+              >
+                hello
               </Box>
             </Box>
           </Box>

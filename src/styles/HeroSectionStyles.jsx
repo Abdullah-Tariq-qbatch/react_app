@@ -29,6 +29,7 @@ const LeftTitle = {
   fontFamily: "'PT Serif', serif;",
   fontWeight: "bold",
   color: "white",
+  textAlign: { xs: "center", md: "start" },
   width: { xs: "100%", md: "80%" },
 };
 
@@ -36,6 +37,7 @@ const LeftText = {
   color: "#92a0b5",
   marginTop: "15px",
   width: { xs: "100%", md: "80%" },
+  textAlign: { xs: "center", md: "start" },
 };
 
 const ButtonContainer = {
@@ -59,15 +61,14 @@ const Button2 = {
   marginLeft: "15px",
 };
 
-const RightContainer = { width: { xs: "100%", md: "50%" } };
+const RightContainer = {
+  width: { xs: "100%", md: "50%" },
+  position: "relative",
+};
 
 const RightImage = {
-  width: { xs: "80%", md: "80%" },
-  height: "100%",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  flexDirection: "row",
+  width: { xs: "80%", md: "100%" },
+  height: "90%",
 };
 
 const BottomContainer = {
