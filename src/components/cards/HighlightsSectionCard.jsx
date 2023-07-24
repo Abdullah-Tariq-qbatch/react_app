@@ -8,6 +8,8 @@ import {
   PageTwoCardText,
 } from "../../styles/HighlightsSectionCardStyles";
 
+import PropTypes from "prop-types";
+
 const HighlightsSectionCard = ({ Icon, title, text }) => {
   return (
     <Box>
@@ -18,6 +20,12 @@ const HighlightsSectionCard = ({ Icon, title, text }) => {
       <Typography sx={PageTwoCardText}>{text}</Typography>
     </Box>
   );
+};
+
+HighlightsSectionCard.propTypes = {
+  text: PropTypes.string,
+  title: PropTypes.string,
+  Icon: PropTypes.node,
 };
 
 export default HighlightsSectionCard;

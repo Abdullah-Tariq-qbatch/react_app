@@ -21,7 +21,7 @@ const QueriesSection = () => {
         </Typography>
 
         <svg
-          class="c0gc4"
+          className="c0gc4"
           width="56"
           height="43"
           fill="#cbd6e0"

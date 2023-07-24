@@ -2,6 +2,8 @@ import React from "react";
 
 import { Box, Typography } from "@mui/material";
 
+import PropTypes from "prop-types";
+
 import {
   FeaturesCardMainContainer,
   FeaturesCardNumber,
@@ -31,6 +33,13 @@ const FeaturesSectionCard = ({ image, text, title, icon }) => {
       </Box>
     </Box>
   );
+};
+
+FeaturesSectionCard.propTypes = {
+  image: PropTypes.string,
+  text: PropTypes.string,
+  title: PropTypes.string,
+  icon: PropTypes.node,
 };
 
 export default FeaturesSectionCard;

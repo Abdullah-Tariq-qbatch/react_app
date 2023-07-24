@@ -56,7 +56,7 @@ const Footer = () => {
             <Box sx={FooterLinkContainer} key={index}>
               <Typography sx={FooterLinkText}>{x.name}</Typography>
               {x.links.map((name, index) => (
-                <Box sx={FooterLinkInsideContainer}>
+                <Box sx={FooterLinkInsideContainer} key={index}>
                   <Link href="#" key={index} sx={FooterLink}>
                     {name}
                   </Link>
